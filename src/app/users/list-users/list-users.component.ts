@@ -11,12 +11,12 @@ export class ListUsersComponent implements OnInit {
 
   constructor(private userService:UserService) { }
 
-  listUsers$!: Observable<object>;
-  users:any = []
+  listUsers:any = [];
+  // listUsers$!: Observable<object>;
   
   ngOnInit():void {
     // this.listUsers$ = this.userService.listUsers();
-    this.userService.listUsers().subscribe(data => {this.users=data; console.log(data)});
+    this.userService.listUsers().subscribe(data => {this.listUsers=data; console.log(data)});
   }
 
 }

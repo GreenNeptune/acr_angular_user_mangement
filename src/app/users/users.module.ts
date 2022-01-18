@@ -7,12 +7,14 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 import { ViewUserComponent } from './view-user/view-user.component';
 import { MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { MatCardModule} from '@angular/material/card';
 
 @NgModule({
   imports: [
     CommonModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    MatCardModule
   ],
   declarations: [
     AddUserComponent,
